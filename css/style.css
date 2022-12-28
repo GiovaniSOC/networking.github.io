@@ -1,0 +1,151 @@
+:root{
+    --primario-soc: #006D4E;
+    --secundario-soc: #4ED176;
+    --secundario-blue: #079DEF;
+    --secundario-btn: #52DEFF;
+    --secundario-orange: #FF7150;
+    --btn: #6c757d;
+    --font-family-circular-Book: 'CircularXX-Book';
+    --font-family-circular: 'CircularXX-Regular';
+    --font-family-circular-Thin: 'CircularXX-Thin';
+}
+/*----Tipografia-----*/
+@font-face {
+    font-family: 'CircularXX-Book';
+    src: url('/fonts/CircularXX-Book.otf') format('opentype'),
+        url('/fonts/CircularXX-Book.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'CircularXX-Regular';
+    src: url('/fonts/CircularXX-Regular.otf') format('opentype'),
+        url('/fonts/CircularXX-Regular.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'CircularXX-Thin';
+    src: url('/fonts/CircularXX-Thin.otf') format('opentype'),
+        url('/fonts/CircularXX-Thin.otf') format('opentype');
+    font-weight: normal;
+    font-style: Thin;
+    font-display: swap;
+}
+
+/*------Estilos------*/
+header{
+    margin-bottom: 32px;
+}
+body{
+    background-color: white;
+    color: var(--primario-soc);
+    font-family: var(--font-family-circular-Book);
+}
+h1, h2, h3{
+    color: var(--primario-soc) !important;
+}
+.banner-text-primario{
+    font-size: 32px;
+    font-weight: 700;
+    margin-bottom: 22px;
+}
+.banner-text-secundario{
+    font-size: 26px;
+    font-weight: 200;
+    text-align: center;
+    margin-bottom: 22px;
+}
+.texto-v{
+    color: var(--primario-soc);
+}
+/*---Card----*/
+.img-card{
+    width: 30%;
+    margin: 22px auto;
+}
+.card-props{
+    height: 250px !important;
+    border-color: var(--primario-soc) !important;
+    margin-bottom: 32px;
+    text-align: center;
+}
+
+.cita{
+    color: var(--secundario-orange);
+    font-weight: 400;
+}
+/*---BTN Inscribirme--*/
+.inscripcion{
+    background-color: var(--secundario-blue);
+    color: white;
+    border-radius: 12px !important;
+    border: none !important;
+    height: 45px;
+}
+.inscripcion a{
+    color: white;
+    text-decoration: none;
+    font-size: 22px;
+    font-weight: 600;
+    margin: 0px 22px;
+}
+
+/*--Acordion--*/
+.accordion-item{
+    border: var(--secundario-soc) solid 1px !important;
+}
+.accordion-button{
+    font-size: 20px;
+    font-weight: 700;
+    color: var(--primario-soc) !important;
+}
+.accordion-button:not(.collapsed){
+    background-color: white !important;
+}
+.accordion-body{
+    color: var(--primario-soc);
+    font-size: 16px;
+}
+.accordion-button:not(.collapsed)::after{
+    background-image: url(/img/collapsable-1.svg) !important;
+    transform: rotate(0deg) !important;
+}
+.siguiente-btn{
+    color: var(--secundario-blue);
+    font-size: 18px;
+    font-weight: 700;
+    text-align: end;
+    display: block;
+}
+/*----Footer---*/
+footer{
+    background-color: var(--primario-soc);
+    margin-top: 32px;
+    height: 80px;
+    display: flex;
+}
+
+footer p{
+    color: white;
+    text-align: center;
+    align-items: center !important;
+    margin: auto;
+}
+
+/*-----MQ----*/
+@media (max-width: 425px) {
+    .inscripcion{
+        margin: auto;
+    } 
+    .card-props{
+        width: 300px !important;
+        margin: 12px auto;
+
+    }
+    .col{
+        margin: auto 22px;
+    }
+}
