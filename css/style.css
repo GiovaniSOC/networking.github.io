@@ -58,8 +58,17 @@ h1, h2, h3{
     text-align: center;
     margin-bottom: 22px;
 }
+.mg-b{
+    margin-bottom: 22px;
+}
 .texto-v{
     color: var(--primario-soc);
+}
+.mg-header{
+    margin: 22px 32px;
+}
+.col{
+    margin: 22px 0px;
 }
 /*---Card----*/
 .img-card{
@@ -75,7 +84,7 @@ h1, h2, h3{
 
 .cita{
     color: var(--secundario-orange);
-    font-weight: 400;
+    font-weight: 200;
 }
 /*---BTN Inscribirme--*/
 .inscripcion{
@@ -147,5 +156,11 @@ footer p{
     }
     .col{
         margin: auto 22px;
+    }
+    .alin-mobile{
+        display: block !important;
+    }
+    ul{
+        padding: 0px !important;
     }
 }
