@@ -188,6 +188,12 @@ strong{
     background: none;
     border: none;
 }
+.txt-area{
+    border-color: var(--secundario-soc);
+    border-radius: 6px;
+    width: -webkit-fill-available;
+    height: 80px;
+}
 
 /*----Footer---*/
 footer{
