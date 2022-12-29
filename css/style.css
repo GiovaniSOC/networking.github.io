@@ -168,7 +168,10 @@ strong{
     text-align: center;
     margin: auto;
 }
-
+.btnStyle{
+    background: none;
+    border: none;
+}
 
 /*----Footer---*/
 footer{
