@@ -44,8 +44,15 @@ body{
     color: var(--primario-soc);
     font-family: var(--font-family-circular-Book);
 }
+.row{
+    margin:32px;
+}
 h1, h2, h3{
     color: var(--primario-soc) !important;
+}
+h3{
+    font-size: 22px !important;
+    text-align: center;
 }
 .banner-text-primario{
     font-size: 32px;
@@ -53,16 +60,20 @@ h1, h2, h3{
     margin-bottom: 22px;
 }
 .banner-text-secundario{
-    font-size: 26px;
+    font-size: 24px;
     font-weight: 200;
     text-align: center;
     margin-bottom: 22px;
+}
+strong{
+    font-weight: 700 !important;
 }
 .mg-b{
     margin-bottom: 22px;
 }
 .texto-v{
     color: var(--primario-soc);
+    font-weight: 300;
 }
 .mg-header{
     margin: 22px 32px;
@@ -85,6 +96,14 @@ h1, h2, h3{
 .cita{
     color: var(--secundario-orange);
     font-weight: 200;
+    font-size: 18px;
+    text-align: center;
+}
+.img-cta{
+    width: 50%;
+}
+.cta-r{
+    transform: rotate(180deg);
 }
 /*---BTN Inscribirme--*/
 .inscripcion{
@@ -100,6 +119,9 @@ h1, h2, h3{
     font-size: 22px;
     font-weight: 600;
     margin: 0px 22px;
+}
+.pCerp{
+    padding: 0px;
 }
 
 /*--Acordion--*/
@@ -129,6 +151,17 @@ h1, h2, h3{
     text-align: end;
     display: block;
 }
+/*-----Formulario-----*/
+.form-texto{
+    color: var(--primario-soc);
+    font-weight: 200;
+    margin-left: 50px;
+}
+.formInput{
+    border: var(--secundario-soc) solid 1px !important;
+    width: 90% !important;
+    margin: auto; 
+}
 /*----Footer---*/
 footer{
     background-color: var(--primario-soc);
@@ -150,17 +183,42 @@ footer p{
         margin: auto;
     } 
     .card-props{
-        width: 300px !important;
+        width: 400px !important;
         margin: 12px auto;
 
-    }
-    .col{
-        margin: auto 22px;
     }
     .alin-mobile{
         display: block !important;
     }
     ul{
         padding: 0px !important;
+    }
+    .form-texto{
+        margin-left: 20px;
+    }
+    .img-cta{
+        width: 90%;
+    }
+    .navbar-brand img{
+        margin-top: -10px;
+        margin-bottom: 22px;
+    }
+    .header-alin{
+        text-align: center;
+        display: block !important;
+    }
+    .banner-texto{
+        display: block !important;
+    }
+    .banner-texto img{
+        width: 300px;
+        margin: auto;
+        display: block !important;
+    }
+}@media (max-width: 375px) {
+    .card-props{
+        width: 330px !important;
+        margin: 12px auto;
+
     }
 }
