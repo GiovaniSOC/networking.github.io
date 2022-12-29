@@ -220,7 +220,7 @@
             <div class="container mg-b">
                 <div class="row">
                     <h3 class="mg-b">¿Estás listo para iniciar este poderoso entrenamiento que potenciará tus resultados en el 2023?</h3>
-                    <form action="" class="form-m">
+                    <form id="formularioUno" action="" class="form-m">
                         <div class="mb-3">
                             <label for="formGroupExampleInput" class="form-label form-texto">Nombre Completo</label>
                             <input type="text" class="form-control formInput" id="formGroupExampleInput">
@@ -237,12 +237,14 @@
                             <label for="formGroupExampleInput2" class="form-label form-texto">Teléfono</label>
                             <input type="text" class="form-control formInput" id="formGroupExampleInput2">
                         </div>
-                        <a class="siguiente-btn" href="#formularioOcultar">Siguiente</a>
+                        <div class="siguiente-btn">
+                        <button onclick="toggles()" id="siguiente" class="btnStyle"><a class="siguiente-btn">Siguiente</a></button>
+                    </div>
                     </form>
                 </div>
                 <!---Segundo Formulario---->
                 <div class="row">
-                    <form id="formularioDos" action="" class="form-m">
+                    <form id="formularioDos" style="display: none;" action="" class="form-m">
                         <div class="mb-3">
                             <label for="formGroupExampleInput" class="form-label form-texto">1.¿Has trabajado antes una estrategia de networking? (En caso afirmativo cuéntanos de manera breve qué has hecho y qué has conseguido.)</label>
                             <input type="text" class="form-control formInput" id="formGroupExampleInput">
@@ -315,6 +317,8 @@
 
 
     <!---JS---->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
     <script src="script.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
   </body>
