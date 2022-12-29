@@ -71,15 +71,25 @@ strong{
 .mg-b{
     margin-bottom: 22px;
 }
+.mg-t{
+    margin-top: 30px;
+}
 .texto-v{
     color: var(--primario-soc);
     font-weight: 300;
 }
-.mg-header{
-    margin: 22px 32px;
+.nav-flotante{
+    margin-top: 0 !important;
+    padding-top: 0 !important;
+    position: fixed;
+    background: white;
+    text-align: right !important;
+    top: 0;
+    width: 100%;
+    z-index: 1000;box-shadow: rgba(17, 17, 26, 0.1) 0px 1px 0px;
 }
-.col{
-    margin: 22px 0px;
+.navbar-fl-m{
+    margin: 0px 35px;
 }
 /*---Card----*/
 .img-card{
@@ -91,6 +101,7 @@ strong{
     border-color: var(--primario-soc) !important;
     margin-bottom: 32px;
     text-align: center;
+    width: fit-content !important;
 }
 
 .cita{
@@ -140,16 +151,19 @@ strong{
     color: var(--primario-soc);
     font-size: 16px;
 }
-.accordion-button:not(.collapsed)::after{
+/* .accordion-button:not(.collapsed)::after{
     background-image: url(/img/collapsable-1.svg) !important;
     transform: rotate(0deg) !important;
-}
+} */
 .siguiente-btn{
     color: var(--secundario-blue);
     font-size: 18px;
     font-weight: 700;
     text-align: end;
     display: block;
+}
+.acerca-taller{
+    text-align: start;
 }
 /*-----Formulario-----*/
 .form-m{
@@ -193,11 +207,16 @@ footer p{
     .inscripcion{
         margin: auto;
     } 
+    .mg-t{
+        margin-top: 145px;
+    }
+    .navbar-fl-m{
+        margin: 11px;
+    }
     .form-m{
         margin: auto;
     }
     .card-props{
-        width: 400px !important;
         margin: 12px auto;
 
     }
@@ -206,9 +225,6 @@ footer p{
     }
     ul{
         padding: 0px !important;
-    }
-    .form-texto{
-        margin-left: 20px;
     }
     .img-cta{
         width: 90%;
@@ -231,7 +247,6 @@ footer p{
     }
 }@media (max-width: 375px) {
     .card-props{
-        width: 330px !important;
         margin: 12px auto;
 
     }
