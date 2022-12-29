@@ -152,16 +152,24 @@ strong{
     display: block;
 }
 /*-----Formulario-----*/
+.form-m{
+    margin: auto 30px;
+    width: 95% !important;
+}
 .form-texto{
     color: var(--primario-soc);
     font-weight: 200;
-    margin-left: 50px;
 }
 .formInput{
     border: var(--secundario-soc) solid 1px !important;
-    width: 90% !important;
     margin: auto; 
 }
+.btn-center{
+    text-align: center;
+    margin: auto;
+}
+
+
 /*----Footer---*/
 footer{
     background-color: var(--primario-soc);
@@ -182,6 +190,9 @@ footer p{
     .inscripcion{
         margin: auto;
     } 
+    .form-m{
+        margin: auto;
+    }
     .card-props{
         width: 400px !important;
         margin: 12px auto;
