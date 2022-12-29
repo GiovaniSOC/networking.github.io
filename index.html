@@ -15,7 +15,7 @@
   <body>
     <header class="mg-header align-items-center">
         <nav class="navbar navbar-expand-lg">
-            <div class="container-fluid">
+            <div class="container-fluid header-alin">
               <a class="navbar-brand" href="#">
                 <img style="height: 60px;" class="img-fluid" src="img/soc-logov.png" alt="" srcset=""></a>
               <button class="inscripcion"><a href="index.html">Quiero inscribirme</a></button>
@@ -23,7 +23,7 @@
           </nav>
     </header>
     <div class="container text-center">
-        <div class="row align-items-center">
+        <div class="row align-items-center banner-texto">
             <div class="col">
                 <img class="img-fluid" src="img/banner-home.png" alt="" srcset="">
             </div>
@@ -78,8 +78,14 @@
             </div>
             <!--CTA-->
             <div class="row">
-                <div class="col">
+                <div class="col-2" style="text-align: center;">
+                    <img src="img/ct.png" class="img-cta">
+                </div>
+                <div class="col-8">
                     <p class="cita">Lo que estás a punto de aprender es una filosofía de vida acompañada de un sistema para hacer negocios, esta es la esencia de un verdadero Networking.</p>
+                </div>
+                <div class="col-2" style="text-align: center;">
+                    <img src="img/ct.png" class="img-cta cta-r">
                 </div>
             </div>
           </div>
@@ -88,7 +94,7 @@
               <div class="row align-items-center">
                   <div class="col-12 col-sm-6">
                     <p class="texto-v">La agenda de cada sesión se desarrolla de la siguiente manera:</p>
-                    <ul>
+                    <ul class="pCerp">
                         <li class="texto-v mg-b"><img src="img/favicon.png" style="height: 20px;">  Introducción conceptual del tema a trabajar en la semana siguiente.</li>
                         <li class="texto-v mg-b"><img src="img/favicon.png" style="height: 20px;">  Asignación de tareas para la semana</li>
                         <li class="texto-v mg-b"><img src="img/favicon.png" style="height: 20px;">  Feedback a los participantes sobre su actividad de networking de la semana.</li>
@@ -105,7 +111,7 @@
             <div class="container mg-b">
                 <div class="row">
                     <div class="col">
-                        <h3>Acerca del taller</h3>
+                        <h3 class="mg-b">Acerca del taller</h3>
                         <div class="accordion" id="accordionExample">
                             <div class="accordion-item">
                               <h2 class="accordion-header" id="headingOne">
@@ -213,23 +219,23 @@
             <!---Formulario--->
             <div class="container mg-b">
                 <div class="row">
-                    <h3>¿Estás listo para iniciar este poderoso entrenamiento que potenciará tus resultados en el 2023?</h3>
+                    <h3 class="mg-b">¿Estás listo para iniciar este poderoso entrenamiento que potenciará tus resultados en el 2023?</h3>
                     <form action="">
                         <div class="mb-3">
-                            <label for="formGroupExampleInput" class="form-label">Nombre Completo</label>
-                            <input type="text" class="form-control" id="formGroupExampleInput">
+                            <label for="formGroupExampleInput" class="form-label form-texto">Nombre Completo</label>
+                            <input type="text" class="form-control formInput" id="formGroupExampleInput">
                         </div>
                         <div class="mb-3">
-                            <label for="formGroupExampleInput2" class="form-label">Oficina</label>
-                            <input type="text" class="form-control" id="formGroupExampleInput2">
+                            <label for="formGroupExampleInput2" class="form-label form-texto">Oficina</label>
+                            <input type="text" class="form-control formInput" id="formGroupExampleInput2">
                         </div>
                         <div class="mb-3">
-                            <label for="formGroupExampleInput2" class="form-label">Correo</label>
-                            <input type="text" class="form-control" id="formGroupExampleInput2">
+                            <label for="formGroupExampleInput2" class="form-label form-texto">Correo</label>
+                            <input type="text" class="form-control formInput" id="formGroupExampleInput2">
                         </div>
                         <div class="mb-3">
-                            <label for="formGroupExampleInput2" class="form-label">Teléfono</label>
-                            <input type="text" class="form-control" id="formGroupExampleInput2">
+                            <label for="formGroupExampleInput2" class="form-label form-texto">Teléfono</label>
+                            <input type="text" class="form-control formInput" id="formGroupExampleInput2">
                         </div>
                         <a class="siguiente-btn" href="http://">Siguiente</a>
                     </form>
