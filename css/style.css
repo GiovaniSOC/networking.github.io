@@ -201,12 +201,14 @@ strong{
     margin: auto;
 }
 .boton-escala{
-    border:2px solid var(--primario-soc);
+    border:2px solid #DADAD9;
     width:10%;
 }
 .boton-escala a {
     color: var(--primario-soc);
     text-decoration: none;
+    font-weight: 800;
+    font-family: var(--font-family-circular-Book);
 }
 /*----Footer---*/
 footer{
