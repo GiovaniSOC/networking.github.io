@@ -72,7 +72,7 @@ strong{
     margin-bottom: 22px;
 }
 .mg-t{
-    margin-top: 30px;
+    margin-top: 100px;
 }
 .texto-v{
     color: var(--primario-soc);
@@ -210,6 +210,26 @@ strong{
     font-weight: 800;
     font-family: var(--font-family-circular-Book);
 }
+.boton-escala option {
+    color: var(--primario-soc);
+    text-decoration: none;
+    font-weight: 800;
+    font-family: var(--font-family-circular-Book);
+}
+.form-check-input:checked{
+    background-color: #079DEF;
+}
+.form-check-input{
+    width: 40px;
+    height: 40px;
+}
+.form-check-input:checked[type=checkbox] {
+    color: green !important;
+}
+.form-check-input:checked {
+    background-color: green !important;
+}
+
 /*----Footer---*/
 footer{
     background-color: var(--primario-soc);
@@ -231,7 +251,7 @@ footer p{
         margin: auto;
     } 
     .mg-t{
-        margin-top: 145px;
+        margin-top: 180px;
     }
     .navbar-fl-m{
         margin: 11px;
