@@ -194,6 +194,12 @@ strong{
     width: -webkit-fill-available;
     height: 80px;
 }
+.txt-areaDos{
+    border-color: var(--secundario-soc);
+    border-radius: 6px;
+    width: -webkit-fill-available;
+    height: 35px;
+}
 /*----Escala----*/
 .contenedor-escala{
     width: 80%;
