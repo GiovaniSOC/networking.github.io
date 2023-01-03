@@ -241,34 +241,34 @@
                             <table class="contenedor-escala">
                               <tr>
                                 <td class="boton-escala">
-                                  <a href="">1</a>
+                                  <label><input type="radio" name="escala" value="1" />1</label>
                                 </td>
                                 <td class="boton-escala">
-                                  <a href="">2</a>
+                                  <label><input type="radio" name="escala" value="2" />2</label>
                                 </td>
                                 <td class="boton-escala">
-                                  <a href="">3</a>
+                                  <label><input type="radio" name="escala" value="3" />3</label>
                                 </td>
                                 <td class="boton-escala">
-                                  <a href="">4</a>
+                                  <label><input type="radio" name="escala" value="4" />4</label>
                                 </td>
                                 <td class="boton-escala">
-                                  <a href="">5</a>
+                                  <label><input type="radio" name="escala" value="5" />5</label>
                                 </td>
                                 <td class="boton-escala">
-                                  <a href="">6</a>
+                                  <label><input type="radio" name="escala" value="6" />6</label>
                                 </td>
                                 <td class="boton-escala">
-                                  <a href="">7</a>
+                                  <label><input type="radio" name="escala" value="7" />7</label>
                                 </td>
                                 <td class="boton-escala">
-                                  <a href="">8</a>
+                                  <label><input type="radio" name="escala" value="8" />8</label>
                                 </td>
                                 <td class="boton-escala">
-                                  <a href="">9</a>
+                                  <label><input type="radio" name="escala" value="9" />9</label>
                                 </td>
                                 <td class="boton-escala">
-                                  <a href="">10</a>
+                                  <label><input type="radio" name="escala" value="10" />10</label>
                                 </td>
                               </tr>
                             </table>
@@ -311,5 +311,40 @@
 
     <script src="script.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+    <style>
+        .boton-escala label{
+            display: block;
+            cursor: pointer;
+            transition: all ease-in-out .3s;
+        }
+        .boton-escala label input{
+            visibility: hidden;
+            appearance: none;
+            position: absolute;
+            z-index: -1;
+        }
+        .items-hover,
+        .items-selected{
+            background-color: var(--secundario-soc);
+        }
+    </style>
+    <script>
+        $('.contenedor-escala label').hover(function() {
+            $(this).addClass('items-hover');
+            $(this).parent().prevAll().find('label').addClass('items-hover');
+            $(this).parent().nextAll().find('label').removeClass('items-hover');
+        });
+        $('.contenedor-escala label').click(function() {
+            $(this).find('input').prop('checked',true);
+            $(this).addClass('items-selected');
+            $(this).parent().prevAll().find('label').addClass('items-selected');
+            $(this).parent().nextAll().find('label').removeClass('items-selected');
+        });
+        $('.contenedor-escala label').mouseout(function() {
+            $(this).removeClass('items-hover');
+            $(this).parent().prevAll().find('label').removeClass('items-hover');
+            $(this).parent().nextAll().find('label').removeClass('items-hover');
+        });
+    </script>
   </body>
 </html>
