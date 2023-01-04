@@ -259,8 +259,11 @@ footer p{
     .mg-t{
         margin-top: 180px;
     }
+    .mgt{
+        margin-top: 42px;
+    }
     .navbar-fl-m{
-        margin: 11px;
+        margin: 8px;
     }
     .form-m{
         margin: auto;
@@ -280,7 +283,7 @@ footer p{
     }
     .navbar-brand img{
         margin-top: -10px;
-        margin-bottom: 22px;
+        margin-bottom: 18px;
     }
     .header-alin{
         text-align: center;
