@@ -332,13 +332,13 @@
     <script>
         $('.contenedor-escala label').hover(function() {
             $(this).addClass('items-hover');
-            $(this).parent().prevAll().find('label').addClass('items-hover');
+            $(this).parent().prevAll().find('label').removeClass('items-hover');
             $(this).parent().nextAll().find('label').removeClass('items-hover');
         });
         $('.contenedor-escala label').click(function() {
             $(this).find('input').prop('checked',true);
             $(this).addClass('items-selected');
-            $(this).parent().prevAll().find('label').addClass('items-selected');
+            $(this).parent().prevAll().find('label').removeClass('items-selected');
             $(this).parent().nextAll().find('label').removeClass('items-selected');
         });
         $('.contenedor-escala label').mouseout(function() {
